@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ego3RT</title><meta name="description" content="Learning Ego 3D Representation as Ray Tracing"><link rel="canonical" href="https://logosintelligencelab.github.io/Ego3RT/"><meta property="og:title" content="Ego3RT"><meta property="og:url" content="https://logosintelligencelab.github.io/Ego3RT/"><link rel="stylesheet" href="./style.css"></head>
+<body id="top-of-page"><main><div class="text-center">
+    <h1>Learning Ego 3D Representation as Ray Tracing </h1>
+    <br>
+    <h6>
+        Jiachen Lu<sup>1</sup> &ensp;
+        Zheyuan Zhou<sup>1</sup> &ensp;
+        <a href="https://xiatian-zhu.github.io" target="_blank" rel="noopener noreferrer">Xiatian Zhu</a><sup>2</sup> &ensp;
+        Hang Xu<sup>3</sup> &ensp;
+
+        <a href="http://www.robots.ox.ac.uk/~lz/" target="_blank" rel="noopener noreferrer">Li Zhang</a><sup>1 *</sup>
+    </h6>
+    <br>
+    <h6>
+        <sup>1</sup>Fudan University &ensp;&ensp;
+        <sup>2</sup>University of Surrey &ensp;&ensp;
+		<sup>3</sup>Huawei Noah's Ark Lab
+
+    </h6>
+
+    <br>
+    <h2>
+        <a href="https://arxiv.org/abs/2206.04042" target="_blank" rel="noopener noreferrer">Paper</a> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <a href="https://github.com/LogosIntelligenceLab/Ego3RT" target="_blank" rel="noopener noreferrer">Code</a>
+    </h2>
+</div>
+
+<div class="text-center">
+    <h2>Abstract</h2>
+</div>
+<div class="row">
+    <p>
+        A self-driving perception model aims to extract 3D semantic representations from multiple cameras collectively into the bird's-eye-view (BEV) coordinate frame of the ego car in order to ground downstream planner. Existing perception methods often rely on error-prone depth estimation of the whole scene or learning sparse virtual 3D representations without the target geometry structure, both of which remain limited in performance and/or capability. In this paper, we present a novel end-to-end architecture for ego 3D representation learning from an arbitrary number of unconstrained camera views. Inspired by the ray tracing principle, we design a polarized grid of ``imaginary eyes" as the learnable ego 3D representation and formulate the learning process with the adaptive attention mechanism in conjunction with the 3D-to-2D projection. Critically, this formulation allows extracting rich 3D representation from 2D images without any depth supervision, and with the built-in geometry structure consistent w.r.t. ~BEV. Despite its simplicity and versatility, extensive experiments on standard BEV visual tasks (e.g., camera-based 3D object detection and BEV segmentation) show that our model outperforms all state-of-the-art alternatives significantly, with an extra advantage in computational efficiency from multi-task learning.
+    </p>
+</div>
+
+<div class="text-center">
+    <h2> Video </h2>
+    <video width="800" height="225" controls="" style="text-align: center;">
+        <source src="./images/images_for_pub/ego3rt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</div>
+</main><footer>Created by Zheyuan Zhou · <a href="#top-of-page">Back to top</a></footer></body></html>
